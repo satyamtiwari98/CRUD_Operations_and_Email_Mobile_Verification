@@ -63,52 +63,83 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
   ?>
   <form action="" method="post">
+
     <label for="">Name :- </label>
     <input type="text" name="name" id="" placeholder="Enter Your Name" value="<?php echo $row["name"];?>" required>
+    
     <br><br>
+    
     <label for="">Father's Name :- </label>
     <input type="text" name="fname" placeholder="Enter Your Father's Name" value="<?php echo $row["fname"];?>" required>
+    
     <br><br>
+    
     <label for="">Mother's Name :- </label>
     <input type="text" name="mname" placeholder="Enter Your Mother Name" value="<?php echo $row["mname"];?>" required>
+    
     <br><br>
+    
     <label for="">Email :- </label>
     <input type="text" name="email" value="<?php echo $row["email"];?>">
+    
     <br><br>
+    
     <label for="">Password :- </label>
     <input type="password" name="pass" placeholder="Enter Your Password" value="<?php echo $row["pass"]; ?>">
+    
     <br><br>
+    
     <label for="">Gender :- </label>
     <input type="radio" name="gender" value="male">Male</input>
     <input type="radio" name="gender" value="female">Female</input>
     <input type="radio" name="gender" value="others">Others</input>
+    
     <br><br>
+    
     <label for="">Date Of Birth :- </label>
     <input type="date" name="dob" value="<?php echo $row["dob"];?>">
+    
     <br><br>
+    
     <label for="">Mobile Number :- </label>
     <input type="number" name="mobile" value="<?php echo $row["mobile"];?>">
+    
     <br><br>
+    
     <label for="">Do you want to recieve text on this number or not???</label>
     <input type="radio" name="yesORno" value="yes">Yes</input>
     <input type="radio" name="yesORno" value="no">No</input>
+    
     <br><br>
+    
     <label for="">Address :- </label>
     <input type="text" name="address" placeholder="Enter Your Address" value="<?php echo $row["address"];?>">
+    
     <br><br>
+    
     <label for="">City :- </label>
     <input type="text" name="city" placeholder="Enter your city" value="<?php echo $row["city"];?>">
+    
     <br><br>
+    
     <label for="">Zip Code</label>
     <input type="number" name="zipCode" placeholder="Enter Your Zip Code" value="<?php echo $row["zip"];?>">
+    
     <br><br>
+    
     <input type="submit" value="update" name="submit" class="btn btn-success">
     
 
   </form>
+
   <?php
+
     }
-}?>
+
+}
+
+?>
+
   </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

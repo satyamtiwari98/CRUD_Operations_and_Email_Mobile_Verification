@@ -50,25 +50,33 @@ if(isset($_POST['verify'])) {
 
     <label for="">Email :- </label>
     <input type="email" name="email" id="" placeholder="Enter Your Email Address" required>
+    
     <br><br>
+    
     <label for="">Mobile Number :- </label>
     <input type="number" name="mobile" id="" placeholder="Enter Your Mobile Number" required>
+    
     <br><br>
+    
     <input type="submit" value="Verify" id="submit" class="btn btn-success">
     <a href="index.php">If You have registered with us.Please click here to login into your account.</a>
 
-
     </form>
+
+
     <form action="" method="post" id="otpVerify">
 
     <input type="text" name="emailOTP" id="emailOTP" placeholder="Enter Your OTP You Get In Your Email." required>
+    
     <br><br>
+    
     <input type="text" name="mobileOTP" id="mobileOTP" placeholder="Enter Your OTP You Get In Your Mobile Number" required>
+    
     <br><br>
+    
     <input type="submit" value="Submit" name="verify" class="btn btn-success">
+    
     </form>
-
-
 
     </div>
 
@@ -93,7 +101,7 @@ if(isset($_POST['verify'])) {
                 })
             })
         });
-        
+
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

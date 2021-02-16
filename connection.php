@@ -1,4 +1,5 @@
 <?php
+
     $serverName = 'localhost';
     $username = 'root';
     $password = '';
@@ -9,7 +10,7 @@
     if($connect->connect_error) {
 
         die("There is something wrong with the connection please recheck it !!!");
-        
+
     }
 
 
