@@ -10,10 +10,12 @@
         $pass = $_POST['password'];
 
 
-        $sqlQuery = "SELECT * from User where `email`='$email' and `pass`='$pass'";
+        $sqlQuery = "SELECT * from User where `email`='$email' AND `pass`='$pass'";
+        
+        $result = $connect->query($sqlQuery);
+        
 
-
-        if($connect->query($sqlQuery) == True) {
+        if($result->num_rows > 0) {
 
             $_SESSION['email']=$email;
             $_SESSION['password']=$pass;
